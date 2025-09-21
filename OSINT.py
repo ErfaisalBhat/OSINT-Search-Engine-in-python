@@ -436,21 +436,17 @@ class OSINTSearchEngine:
 
         # University-specific search queries
         university_queries = [
-            f'site:iust.ac.in "{username}"',
-            f'site:kashmiruniversity.net "{username}"',
-            f'site:uok.edu.in "{username}"',
-            f'site:cukashmir.ac.in "{username}"',
-            f'site:skUastkashmir.ac.in "{username}"',
-            f'site:clusterUniversity.in "{username}"',
+            f'universityname "{username}"',
+            f'universitynamet "{username}"',
+            f'universityname "{username}"',
+            f'universityname"{username}"',
+            f'universityname "{username}"',
+            f'universityname "{username}"',
         ]
 
         university_names = {
-            'iust.ac.in': 'Islamic University of Science & Technology',
-            'kashmiruniversity.net': 'University of Kashmir',
-            'uok.edu.in': 'University of Kashmir (Official)',
-            'cukashmir.ac.in': 'Central University of Kashmir',
-            'skUastkashmir.ac.in': 'Sher-e-Kashmir University of Agricultural Sciences & Technology',
-            'clusterUniversity.in': 'Cluster University Srinagar'
+            'example.com': 'University of Science & Technology',
+          
         }
 
         for query in university_queries:
@@ -1346,3 +1342,4 @@ if __name__ == "__main__":
 
         traceback.print_exc()
         print("Please check your internet connection and try again.")
+
